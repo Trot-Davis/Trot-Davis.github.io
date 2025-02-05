@@ -32,10 +32,56 @@ section {
 }
 
 .project {
-    background: #ddd;
-    margin: 20px auto;
-    padding: 15px;
+    background: #e8e8e8; /* Light gray background for contrast */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 800px;
+    margin: 30px auto; /* Centering */
+    text-align: center; /* Center all text */
+    border: 2px solid #ddd; /* Light border */
+}
+
+/* Title Styling */
+.project h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Darker color for better readability */
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.project p {
+    font-size: 16px;
+    line-height: 1.6; /* Better spacing for readability */
+    color: #444;
+    text-align: justify; /* Make text justified */
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+/* Image Styling */
+.project img {
+    width: 100%; /* Make images responsive */
+    border-radius: 8px; /* Round edges of images */
+    margin-bottom: 15px; /* Spacing below images */
+}
+
+/* GitHub Link Styling */
+.project a {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
     border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.project a:hover {
+    background: #2E8B57; /* Darker green on hover */
 }
 
 

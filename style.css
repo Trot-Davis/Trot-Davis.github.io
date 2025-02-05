@@ -38,21 +38,38 @@ section {
     border-radius: 5px;
 
 
-    .upcoming-projects {
-    background: linear-gradient(to right, #4CAF50, #2E8B57);
+.upcoming-projects {
+    background: linear-gradient(to right, #4CAF50, #2E8B57); /* Smooth gradient */
     color: white;
     text-align: center;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 12px;
     font-family: Arial, sans-serif;
-    margin-top: 30px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ffffff; /* White border for contrast */
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+/* Divider Line */
+.upcoming-projects::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: linear-gradient(to right, #ffffff, #FFD700, #ffffff); /* White & Gold */
+    margin: 15px auto 0;
+    border-radius: 2px;
 }
 
 .upcoming-projects h2 {
     margin: 0;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .upcoming-projects p {

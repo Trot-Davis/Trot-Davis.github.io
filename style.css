@@ -36,4 +36,27 @@ section {
     margin: 20px auto;
     padding: 15px;
     border-radius: 5px;
+
+
+    .upcoming-projects {
+    background: linear-gradient(to right, #4CAF50, #2E8B57);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.upcoming-projects h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.upcoming-projects p {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
 }

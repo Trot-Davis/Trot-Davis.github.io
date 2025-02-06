@@ -124,3 +124,83 @@ section {
     font-size: 16px;
 }
 
+
+
+/* Resume Section Styling */
+.resume-section {
+    background: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.resume-container {
+    background: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Resume Title */
+.resume-section h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Resume Section Headings */
+.resume-container h2 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-top: 20px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+/* Paragraphs */
+.resume-container p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Resume Download Button */
+.resume-download {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+.resume-download:hover {
+    background: #2E8B57;
+}
+
+/* Flexbox for Better Layout */
+.resume-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resume-column {
+    width: 48%;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .resume-column {
+        width: 100%;
+    }
+}
+

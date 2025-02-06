@@ -23,22 +23,29 @@
     <!-- Contact Section -->
     <section class="contact-section">
         <h1>Contact Me</h1>
-        <p>If you'd like to get in touch, feel free to send me a message or connect via email or social media.</p>
+        <p>If you'd like to get in touch, feel free to send me a message or connect via email or social media. See my links below or use the contact form to email me directly!</p>
 
         <!-- Contact Form -->
-       <form action="https://formsubmit.co/6dab04d7d1ecd94a6ca9b7f2c355960c" method="POST" class="contact-form">
-            <input type="hidden" name="_captcha" value="false"> <!-- Disables annoying CAPTCHA -->
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <form action="https://formsubmit.co/6dab04d7d1ecd94a6ca9b7f2c355960c" method="POST" class="contact-form">
+    <input type="hidden" name="_captcha" value="false"> <!-- Disable CAPTCHA -->
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
 
-            <button type="submit">Send Message</button>
-        </form>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+</form>
 
         <!-- Contact Info -->
         <div class="contact-info">

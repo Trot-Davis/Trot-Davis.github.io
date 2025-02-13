@@ -46,6 +46,17 @@
             <a href="projects.html" target="_blank">Back to top</a>
         </div>
 
+          <div class="project">
+            <h2>Project 4: Reflow Solder Oven - School Project</h2>
+            <img src="Reflow Solder Oven.png" alt="Project 1" width="600">
+            <p> This project was one of the most enjoyable experiences of my second year at university. Working alongside five other electrical engineering students, all equally passionate about the field, made every second exciting.
+
+Our design worked by reading the temperature from a thermocouple wire placed inside an oven and comparing it to an external voltage reference. This temperature value was then displayed on an LCD screen and transmitted through the COM port to be plotted using a Python program. We set desired times and temperatures for the soak and reflow phases, and once those values were reached, one of the Nuvoton chips signaled both the LCD and the other chip to change states. Various features responded accordingly, and after a lot of trial and error, we successfully implemented the reflow solder oven.
+
+My primary role focused on writing the assembly code for the two Nuvoton chips. I designed a finite state machine that controlled the signals sent between the chips and determined which states were displayed on the LCD. I also implemented the timer-based pulse width modulation (PWM) and buzzer control, while the solid heat-up phase was much simpler to program. The second chip received signals from the first and managed the oven’s output—switching between heat-up, PWM, and cool-down phases—along with controlling the speaker and an LED. In addition to coding, I helped develop the Python program and worked on wiring the breadboard to ensure everything was connected and functioning properly. </p>
+            <a href="projects.html" target="_blank">Back to top</a>
+        </div>
+
         <div class="upcoming-projects">
     <h2>Upcoming Projects</h2>
     <p>Exciting new projects are on the way! Stay tuned for more updates...</p>

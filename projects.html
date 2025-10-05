@@ -37,52 +37,52 @@
             <div class="projects-grid">
                 <!-- PCB NFC Business Card -->
                 <div class="project-card">
-                    <h3>PCB NFC Business Card — Personal Project</h3>
+                    <h3>PCB Business Card</h3>
                     <div class="project-images">
                         <img src="PCB Schematic.png" alt="PCB NFC Business Card schematic">
                         <img src="PCB Layout.png" alt="PCB NFC Business Card layout">
                         <img src="PCB Calculations.png" alt="PCB NFC Business Card calculations">
                     </div>
-                    <p>I designed a fully custom NFC-enabled business card to share my professional details with a tap. I developed the Altium component libraries, schematic, and PCB layout, and designed a planar inductive antenna tuned to the NFC carrier to ensure resonance and reliable coupling. I modeled antenna geometry and trace parameters, then optimized inductance and Q using spreadsheet-based calculations shown above. Next steps are fabrication and firmware for the NFC controller.</p>
+                    <p>This is the project that I'm currently working on. It's a PCB Business card that functions using NFC technology to share my LinkedIn profile as a unique way to network myself. So far, I've created an antenna that has sufficient inductance to ensure the business card is resonating with the NFC's frequency to allow fluent communication. These dimensions and sizing were optimized with the use of Excel as seen above. I have also fabricated both the schematic and PCB libraries in Altium, and designed the electronic schematic as well as layed out the components on the PCB board. All that's left to do is order the PCB and program the NFC chip!</p>
                     <a href="#top" class="project-link">Back to top</a>
                 </div>
 
                 <!-- RISC Machine -->
                 <div class="project-card">
-                    <h3>RISC Machine — Coursework</h3>
+                    <h3>RISC Machine</h3>
                     <div class="project-images">
                         <img src="RISC Machine.png" alt="RISC Machine overview">
                         <img src="Datapath RISC Machine.png" alt="RISC Machine datapath">
                         <img src="State Machine RISC.png" alt="RISC Machine state machine">
                     </div>
-                    <p>I implemented a simple RISC processor in Verilog with instruction decode, a finite-state control unit, an ALU, and read/write data memory. I wrote testbenches and validated functionality in ModelSim, then synthesized to a DE1-SoC FPGA for on-board demonstration. Responsibilities spanned RTL design, datapath/control partitioning, and bring-up using Quartus. The project strengthened my digital design fundamentals and verification workflow.</p>
+                    <p>Created a simple RISC machine that can use read-write memory and perform arithmetic. It works by getting an instruction that gets decoded by the finite state machine, which then proceeds to the datapath. The desired value is computed using Boolean logic, as well as an ALU combinational logic block. From there, I stored the value in memory which can be used in the future. All of the code was done using Visual Studio Code, and was compiled on Quartus. I tested the program by making a testbench and running it in Modelsim to ensure the expected outputs were being output from the instruction that was sent in. I also loaded the program onto an FPGA board (The DE1-SOC) to demo the RISC machine in real life. This was one of my first experiences with hardware and verilog so it was a very enjoyable project for me!</p>
                     <a href="#top" class="project-link">Back to top</a>
                 </div>
 
                 <!-- Arcade Claw -->
                 <div class="project-card">
-                    <h3>Arcade Claw — Team Project</h3>
+                    <h3>Arcade Claw</h3>
                     <div class="project-images">
                         <img src="APSCCLAW2.png" alt="Arcade claw">
                     </div>
-                    <p>I developed Arduino firmware to read a distance sensor and actuate a servo when a calibrated threshold was reached, implementing debouncing and timing safeguards for repeatable picks. I also supported the electrical subsystem—power distribution, cable management, and fault isolation—to ensure reliable operation during demos. The experience cemented my interest in embedded systems and hands-on hardware collaboration.</p>
+                    <p>This project holds a special place in my heart as it was essentially my first real experience of electrical engineering, and it's what made me fall in love with the engineering field as a whole. Being apart of a hard working, dedicated team of multidisciplinary engineering students and getting to see a project you had been working hard on for months come together and function in front of you is an experience I will never forget, and will be one of my fondest early engineering moments. In terms of my role, I was tasked with making the arduino code that read a value from a sensor which triggered the rotation of a servo motor when a certain threshold distance fromn the ground was reached. I also helped the team with the circuitry of the claw, ensuring the claw was getting power and functioning properly.</p>
                     <a href="#top" class="project-link">Back to top</a>
                 </div>
 
                 <!-- Reflow Solder Oven -->
                 <div class="project-card">
-                    <h3>Reflow Solder Oven — Coursework</h3>
+                    <h3>Reflow Solder Oven</h3>
                     <div class="project-images">
                         <img src="Reflow Solder Oven.png" alt="Reflow solder oven hardware">
                         <img src="Reflow Python 3.png" alt="Python plotting of oven profile">
                     </div>
-                    <p>I co-developed a two‑MCU reflow oven controller. The first Nuvoton MCU handled UI and control sequencing; I wrote the assembly for the finite‑state machine driving LCD updates and inter‑MCU signaling. I implemented timer‑driven PWM for the heating element and audible indicators. The second MCU executed the thermal profile—preheat, soak, reflow, and cool‑down—based on thermocouple feedback. We streamed data over serial to a Python script for live plotting and verification. I also contributed to wiring, integration, and system validation.</p>
+                    <p>This project was one of the most enjoyable experiences of my second year at university. Working alongside five other electrical engineering students, all equally passionate about the field, made every second exciting. Our design worked by reading the temperature from a thermocouple wire placed inside an oven and comparing it to an external voltage reference. This temperature value was then displayed on an LCD screen and transmitted through the COM port to be plotted using a Python program. We set desired times and temperatures for the soak and reflow phases, and once those values were reached, one of the Nuvoton chips signaled both the LCD and the other chip to change states. Various features responded accordingly, and after a lot of trial and error, we successfully implemented the reflow solder oven. My primary role focused on writing the assembly code for the two Nuvoton chips. I designed a finite state machine that controlled the signals sent between the chips and determined which states were displayed on the LCD. I also implemented the timer-based pulse width modulation (PWM) and buzzer control, while the solid heat-up phase was much simpler to program. The second chip received signals from the first and managed the oven's output—switching between heat-up, PWM, and cool-down phases—along with controlling the speaker and an LED. In addition to coding, I helped develop the Python program and worked on wiring the breadboard to ensure everything was connected and functioning properly.</p>
                     <a href="#top" class="project-link">Back to top</a>
                 </div>
 
                 <!-- Coin-Picking Robot -->
                 <div class="project-card">
-                    <h3>Coin‑Picking Robot — Personal Project</h3>
+                    <h3>Coin‑Picking Robot</h3>
                     <div class="project-images">
                         <img src="291car.jpeg" alt="Coin-picking robot photo 1">
                         <img src="291car2.jpeg" alt="Coin-picking robot photo 2">

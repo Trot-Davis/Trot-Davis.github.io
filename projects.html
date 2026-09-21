@@ -3,101 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Trot Davis</title>
+    <title>Work — Trot Davis</title>
+    <meta name="description" content="Hardware, FPGA, RF, and embedded systems projects by Trot Davis.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <div class="nav-container">
-                <div class="nav-left">
-                    <div class="logo">TD</div>
-                    <span class="nav-title">Engineering Portfolio: Trot Davis</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <a class="nav-mark" href="index.html">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                    <rect x="1" y="1" width="20" height="20" rx="6" stroke="#64d2ff" stroke-width="1.4"/>
+                    <path d="M6 11h4M12 7v8M16 11h-4" stroke="#c9a66b" stroke-width="1.4" stroke-linecap="round"/>
+                    <circle cx="6" cy="11" r="1.2" fill="#64d2ff"/>
+                    <circle cx="16" cy="11" r="1.2" fill="#64d2ff"/>
+                </svg>
+                Trot Davis
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+                <span></span>
+            </button>
         </nav>
     </header>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="is-active">Work</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 
-    <!-- Projects Section -->
-    <div class="section-header">
-        <div class="container">
-            <h3>Projects</h3>
-        </div>
-    </div>
-
-    <section class="content-section">
-        <div class="container">
-            <div class="projects-grid">
-                <!-- PCB NFC Business Card -->
-                <div class="project-card">
-                    <h3>PCB Business Card</h3>
-                    <div class="project-images">
-                        <img src="PCB Schematic.png" alt="PCB NFC Business Card schematic">
-                        <img src="PCB Layout.png" alt="PCB NFC Business Card layout">
-                        <img src="PCB Calculations.png" alt="PCB NFC Business Card calculations">
-                    </div>
-                    <p>Designed and developed an NFC-enabled business card PCB utilizing 13.56 MHz inductive coupling technology. Implemented custom planar antenna design with optimized trace geometry to achieve target inductance values for resonant operation. Conducted electromagnetic simulation and parametric analysis using spreadsheet modeling to validate antenna performance characteristics. Designed complete schematic and PCB layout in Altium Designer, including component library creation and footprint optimization. Integrated NFC controller IC with power management circuitry and implemented firmware for contactless data transmission. Project demonstrates proficiency in RF circuit design, PCB layout optimization, and embedded systems integration.</p>
-                    <a href="#top" class="project-link">Back to top</a>
-                </div>
-
-                <!-- RISC Machine -->
-                <div class="project-card">
-                    <h3>RISC Machine</h3>
-                    <div class="project-images">
-                        <img src="RISC Machine.png" alt="RISC Machine overview">
-                        <img src="Datapath RISC Machine.png" alt="RISC Machine datapath">
-                        <img src="State Machine RISC.png" alt="RISC Machine state machine">
-                    </div>
-                    <p>Implemented a 32-bit RISC processor architecture in Verilog HDL featuring instruction decode, finite state machine control unit, arithmetic logic unit (ALU), and dual-port memory interface. Developed comprehensive testbench suite using ModelSim for functional verification and timing analysis. Synthesized design targeting Altera DE1-SoC FPGA platform using Quartus Prime development environment. Achieved successful on-board demonstration with real-time instruction execution and memory operations. Project encompassed RTL design methodology, digital signal processing fundamentals, and FPGA implementation workflows. Demonstrated proficiency in hardware description languages, digital design verification, and embedded systems development.</p>
-                    <a href="#top" class="project-link">Back to top</a>
-                </div>
-
-                <!-- Arcade Claw -->
-                <div class="project-card">
-                    <h3>Arcade Claw</h3>
-                    <div class="project-images">
-                        <img src="APSCCLAW2.png" alt="Arcade claw">
-                    </div>
-                    <p>Developed embedded control system for automated arcade claw mechanism utilizing Arduino microcontroller platform. Implemented ultrasonic distance sensing with calibrated threshold detection algorithms for precise object positioning. Designed servo motor control interface with PWM signal generation and timing optimization for consistent actuation cycles. Integrated power management system with fault protection and current limiting for reliable operation. Collaborated with multidisciplinary engineering team on mechanical-electrical integration and system validation. Project demonstrated proficiency in embedded C programming, sensor integration, motor control systems, and hardware-software co-design methodologies.</p>
-                    <a href="#top" class="project-link">Back to top</a>
-                </div>
-
-                <!-- Reflow Solder Oven -->
-                <div class="project-card">
-                    <h3>Reflow Solder Oven</h3>
-                    <div class="project-images">
-                        <img src="Reflow Solder Oven.png" alt="Reflow solder oven hardware">
-                        <img src="Reflow Python 3.png" alt="Python plotting of oven profile">
-                    </div>
-                    <p>Co-developed dual-microcontroller reflow soldering oven control system with precision temperature profiling capabilities. Architected master-slave communication protocol between Nuvoton MCUs for coordinated thermal management. Implemented assembly language firmware for finite state machine control, LCD interface management, and inter-processor signaling protocols. Designed timer-based pulse width modulation (PWM) control system for heating element regulation with closed-loop feedback from thermocouple sensors. Developed Python-based data acquisition and visualization system for real-time temperature monitoring and profile validation. Integrated buzzer control, LED status indicators, and serial communication interfaces. Project encompassed embedded systems design, thermal control algorithms, real-time data processing, and multi-processor system integration methodologies.</p>
-                    <a href="#top" class="project-link">Back to top</a>
-                </div>
-
-                <!-- Coin-Picking Robot -->
-                <div class="project-card">
-                    <h3>Coin‑Picking Robot</h3>
-                    <div class="project-images">
-                        <img src="291car.jpeg" alt="Coin-picking robot photo 1">
-                        <img src="291car2.jpeg" alt="Coin-picking robot photo 2">
-                    </div>
-                    <p>Designed and implemented autonomous coin collection robot with computer vision-based object detection and precision manipulation capabilities. Developed sensor fusion algorithms combining ultrasonic and optical sensors for robust object localization under varying lighting conditions. Implemented PID control algorithms for precise motor control and path planning optimization. Designed power management system with battery monitoring and low-power operation modes. Integrated mechanical actuation system with servo-controlled gripper mechanism for reliable object manipulation. Project demonstrated proficiency in robotics systems integration, sensor fusion, control theory implementation, and mechanical-electrical system design.</p>
-                    <a href="#top" class="project-link">Back to top</a>
-                </div>
-            </div>
-
-            <!-- Upcoming Projects -->
-            <div class="upcoming-projects">
-                <h3>Upcoming Projects</h3>
-                <p>Exciting new projects are on the way! Stay tuned for more updates...</p>
-            </div>
+    <section class="page-hero">
+        <div class="container reveal">
+            <p class="eyebrow">Archive</p>
+            <h1>The work.</h1>
+            <p>Boards, cores, ovens, and machines — each one taken from idea to a working system.</p>
         </div>
     </section>
+
+    <section class="container">
+        <article class="project-block" id="pcb">
+            <div class="project-copy reveal">
+                <p class="eyebrow">01 · RF / PCB</p>
+                <h2>NFC business card</h2>
+                <div class="chip-row">
+                    <span class="chip">13.56 MHz</span>
+                    <span class="chip">Altium</span>
+                    <span class="chip">Planar antenna</span>
+                </div>
+                <p>An NFC-enabled business card PCB using inductive coupling at 13.56 MHz. I designed a custom planar antenna with optimized trace geometry to hit target inductance for resonant operation, then validated it with electromagnetic simulation and parametric spreadsheet modeling.</p>
+                <p style="margin-top:14px;">Schematic and layout were completed in Altium Designer, including custom libraries and footprints, with an NFC controller, power management, and firmware for contactless data.</p>
+            </div>
+            <div class="gallery triple reveal">
+                <img src="PCB%20Layout.png" alt="PCB NFC business card layout" class="photo">
+                <img src="PCB%20Schematic.png" alt="PCB NFC business card schematic">
+                <img src="PCB%20Calculations.png" alt="Antenna calculations">
+            </div>
+        </article>
+
+        <article class="project-block" id="risc">
+            <div class="project-copy reveal">
+                <p class="eyebrow">02 · Digital design</p>
+                <h2>32-bit RISC machine</h2>
+                <div class="chip-row">
+                    <span class="chip">Verilog</span>
+                    <span class="chip">ModelSim</span>
+                    <span class="chip">DE1-SoC</span>
+                </div>
+                <p>A 32-bit RISC processor in Verilog HDL with instruction decode, FSM control, ALU, and dual-port memory. Testbenches in ModelSim covered function and timing; synthesis targeted an Altera DE1-SoC in Quartus Prime.</p>
+                <p style="margin-top:14px;">The design ran on-board with real-time instruction execution and memory operations — RTL, verification, and FPGA bring-up in one stack.</p>
+            </div>
+            <div class="gallery triple reveal">
+                <img src="RISC%20Machine.png" alt="RISC machine overview">
+                <img src="Datapath%20RISC%20Machine.png" alt="RISC datapath">
+                <img src="State%20Machine%20RISC.png" alt="RISC state machine">
+            </div>
+        </article>
+
+        <article class="project-block" id="claw">
+            <div class="project-copy reveal">
+                <p class="eyebrow">03 · Embedded</p>
+                <h2>Arcade claw</h2>
+                <div class="chip-row">
+                    <span class="chip">Arduino</span>
+                    <span class="chip">Ultrasonic</span>
+                    <span class="chip">PWM servo</span>
+                </div>
+                <p>Embedded control for an automated arcade claw on Arduino. Ultrasonic ranging with calibrated thresholds positioned the grab; servo actuation used tuned PWM timing for repeatable cycles.</p>
+                <p style="margin-top:14px;">Power was protected and current-limited. The build was a full mech-electrical integration with a multidisciplinary team.</p>
+            </div>
+            <div class="gallery reveal">
+                <img src="APSCCLAW2.png" alt="Arcade claw mechanism" class="photo">
+            </div>
+        </article>
+
+        <article class="project-block" id="reflow">
+            <div class="project-copy reveal">
+                <p class="eyebrow">04 · Thermal systems</p>
+                <h2>Reflow solder oven</h2>
+                <div class="chip-row">
+                    <span class="chip">Nuvoton</span>
+                    <span class="chip">PWM heat</span>
+                    <span class="chip">Python DAQ</span>
+                </div>
+                <p>A dual-microcontroller reflow oven with precision temperature profiling. Master-slave signaling between Nuvoton MCUs coordinated thermal control. Assembly firmware ran the FSM, LCD, and inter-processor protocol.</p>
+                <p style="margin-top:14px;">Timer-based PWM closed the loop on thermocouple feedback. A Python acquisition stack plotted live profiles, with buzzer, LEDs, and serial status on the side.</p>
+            </div>
+            <div class="gallery triple reveal">
+                <img src="Reflow%20Solder%20Oven.png" alt="Reflow solder oven hardware" class="photo">
+                <img src="Reflow%20Python%203.png" alt="Python plot of oven temperature profile">
+            </div>
+        </article>
+
+        <article class="project-block" id="robot">
+            <div class="project-copy reveal">
+                <p class="eyebrow">05 · Robotics</p>
+                <h2>Coin-picking robot</h2>
+                <div class="chip-row">
+                    <span class="chip">Vision</span>
+                    <span class="chip">PID</span>
+                    <span class="chip">Sensor fusion</span>
+                </div>
+                <p>An autonomous collector with computer-vision detection and a servo gripper. Ultrasonic and optical sensors fused for localization under changing light; PID loops handled drive and path tracking.</p>
+                <p style="margin-top:14px;">Battery monitoring and low-power modes kept the platform honest — robotics as systems work, not a demo on a table.</p>
+            </div>
+            <div class="gallery triple reveal">
+                <img src="291car.jpeg" alt="Coin-picking robot" class="photo">
+                <img src="291car2.jpeg" alt="Coin-picking robot detail" class="photo">
+            </div>
+        </article>
+
+        <div class="upcoming reveal">
+            <p class="eyebrow">In design</p>
+            <h3>Upcoming projects</h3>
+            <p class="muted">New boards and systems are in the queue. This page will update as they leave the bench.</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <span>© 2026 Trot Davis</span>
+            <span>Electrical Engineering · Hardware · Systems</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,69 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Trot Davis</title>
+    <title>Contact — Trot Davis</title>
+    <meta name="description" content="Contact Trot Davis about electrical engineering work, internships, and collaboration.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <div class="nav-container">
-                <div class="nav-left">
-                    <div class="logo">TD</div>
-                    <span class="nav-title">Engineering Portfolio: Trot Davis</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <a class="nav-mark" href="index.html">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                    <rect x="1" y="1" width="20" height="20" rx="6" stroke="#64d2ff" stroke-width="1.4"/>
+                    <path d="M6 11h4M12 7v8M16 11h-4" stroke="#c9a66b" stroke-width="1.4" stroke-linecap="round"/>
+                    <circle cx="6" cy="11" r="1.2" fill="#64d2ff"/>
+                    <circle cx="16" cy="11" r="1.2" fill="#64d2ff"/>
+                </svg>
+                Trot Davis
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+                <span></span>
+            </button>
         </nav>
     </header>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Work</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html" class="is-active">Contact</a></li>
+    </ul>
 
-    <!-- Contact Section -->
-    <div class="section-header">
-        <div class="container">
-            <h3>Contact</h3>
-        </div>
-    </div>
+    <section class="page-hero">
+        <div class="container contact-panel reveal">
+            <p class="eyebrow">Signal in</p>
+            <h1>Send a clean packet.</h1>
+            <p class="muted">Internships, hardware collaboration, or a question about a board — this is the shortest path.</p>
 
-    <section class="content-section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, feel free to send me a message or connect via email or social media. See my links below or use the contact form to email me directly!</p>
-
-            <!-- Contact Form -->
             <form action="https://formsubmit.co/6dab04d7d1ecd94a6ca9b7f2c355960c" method="POST" class="contact-form">
                 <input type="hidden" name="_captcha" value="false">
-                
                 <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
                 </div>
-
                 <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@domain.com" required>
                 </div>
-
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                    <textarea id="message" name="message" rows="6" placeholder="What are we building?" required></textarea>
                 </div>
-
-                <button type="submit">Send Message</button>
+                <button type="submit" class="btn btn-primary">Send</button>
             </form>
 
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <h3>Connect With Me</h3>
-                <p>Email: <a href="mailto:trot.davis2003@gmail.com">trot.davis2003@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/trot-davis-942286325/" target="_blank">My LinkedIn</a></p>
+            <div class="contact-links">
+                <a href="mailto:trot.davis2003@gmail.com">
+                    <span>Email</span>
+                    trot.davis2003@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/trot-davis-942286325/" target="_blank" rel="noopener noreferrer">
+                    <span>LinkedIn</span>
+                    /in/trot-davis
+                </a>
             </div>
         </div>
     </section>
+
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <span>© 2026 Trot Davis</span>
+            <span>Electrical Engineering · Hardware · Systems</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

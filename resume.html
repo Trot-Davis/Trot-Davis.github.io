@@ -3,42 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Trot Davis</title>
+    <title>Resume — Trot Davis</title>
+    <meta name="description" content="Resume of Trot Davis, electrical engineering student at UBC.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <div class="nav-container">
-                <div class="nav-left">
-                    <div class="logo">TD</div>
-                    <span class="nav-title">Engineering Portfolio: Trot Davis</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <a class="nav-mark" href="index.html">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                    <rect x="1" y="1" width="20" height="20" rx="6" stroke="#64d2ff" stroke-width="1.4"/>
+                    <path d="M6 11h4M12 7v8M16 11h-4" stroke="#c9a66b" stroke-width="1.4" stroke-linecap="round"/>
+                    <circle cx="6" cy="11" r="1.2" fill="#64d2ff"/>
+                    <circle cx="16" cy="11" r="1.2" fill="#64d2ff"/>
+                </svg>
+                Trot Davis
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+                <span></span>
+            </button>
         </nav>
     </header>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Work</a></li>
+        <li><a href="resume.html" class="is-active">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 
-    <!-- Resume Section -->
-    <div class="section-header">
-        <div class="container">
-            <h3>Resume</h3>
-        </div>
-    </div>
-
-    <section class="content-section">
-        <div class="container">
-            <div class="resume-section">
-                <h2>My Resume</h2>
-                <a href="Trot Davis.pdf" class="resume-download" download>Download Resume (PDF)</a>
+    <section class="page-hero">
+        <div class="container resume-panel reveal">
+            <p class="eyebrow">Curriculum vitae</p>
+            <h1>The résumé, measured.</h1>
+            <p class="muted">A concise record of education, hardware work, and the tools I use to take designs to silicon and solder.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="Trot%20Davis.pdf" download>Download PDF</a>
+                <a class="btn btn-ghost" href="contact.html">Request a conversation</a>
+            </div>
+            <div class="resume-card">
+                <p class="eyebrow">Trot Davis</p>
+                <h2>Electrical engineering · UBC</h2>
+                <div class="resume-list">
+                    <div>
+                        <span>Focus</span>
+                        <p>Embedded systems, digital design, RF/PCB, and closed-loop hardware.</p>
+                    </div>
+                    <div>
+                        <span>Selected work</span>
+                        <p>NFC business card, 32-bit RISC on FPGA, reflow oven control, arcade claw, coin-picking robot.</p>
+                    </div>
+                    <div>
+                        <span>Tools</span>
+                        <p>Altium, Verilog, Quartus, ModelSim, C/assembly, Python, Arduino, Nuvoton.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <span>© 2026 Trot Davis</span>
+            <span>Electrical Engineering · Hardware · Systems</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

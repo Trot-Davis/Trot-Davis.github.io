@@ -3,58 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trot Davis - Engineering Portfolio</title>
+    <title>Trot Davis — Electrical Engineering</title>
+    <meta name="description" content="Electrical engineering portfolio of Trot Davis — embedded systems, digital design, RF hardware, and precision prototypes.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <div class="nav-container">
-                <div class="nav-left">
-                    <div class="logo">TD</div>
-                    <span class="nav-title">Engineering Portfolio: Trot Davis</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <a class="nav-mark" href="index.html">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                    <rect x="1" y="1" width="20" height="20" rx="6" stroke="#64d2ff" stroke-width="1.4"/>
+                    <path d="M6 11h4M12 7v8M16 11h-4" stroke="#c9a66b" stroke-width="1.4" stroke-linecap="round"/>
+                    <circle cx="6" cy="11" r="1.2" fill="#64d2ff"/>
+                    <circle cx="16" cy="11" r="1.2" fill="#64d2ff"/>
+                </svg>
+                Trot Davis
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+                <span></span>
+            </button>
         </nav>
     </header>
+    <ul class="nav-links">
+        <li><a href="index.html" class="is-active">Home</a></li>
+        <li><a href="projects.html">Work</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <img src="elctricaleng.jpg" alt="Electrical Engineering" class="hero-bg">
-        <div class="hero-content">
-            <h1>Trot Davis</h1>
-            <div class="hero-divider"></div>
-            <h2>Project and Design Portfolio</h2>
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+        <svg class="circuit-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+                <linearGradient id="trace" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#64d2ff" stop-opacity="0.15"/>
+                    <stop offset="50%" stop-color="#c9a66b" stop-opacity="0.45"/>
+                    <stop offset="100%" stop-color="#64d2ff" stop-opacity="0.12"/>
+                </linearGradient>
+            </defs>
+            <path d="M80 180 H320 V420 H620 V240 H980 V620 H1280" fill="none" stroke="url(#trace)" stroke-width="1.4"/>
+            <path d="M140 720 H420 V520 H760 V780 H1180" fill="none" stroke="url(#trace)" stroke-width="1.2"/>
+            <path d="M1280 140 V340 H1040 V80" fill="none" stroke="url(#trace)" stroke-width="1.2"/>
+            <circle cx="320" cy="180" r="3.5" fill="#64d2ff"/>
+            <circle cx="620" cy="420" r="3.5" fill="#c9a66b"/>
+            <circle cx="980" cy="240" r="3.5" fill="#64d2ff"/>
+            <circle cx="760" cy="520" r="3.5" fill="#c9a66b"/>
+        </svg>
+        <div class="hero-copy">
+            <p class="eyebrow">Electrical Engineering · UBC</p>
+            <h1>Precision hardware.<br>Clean signal.</h1>
+            <p class="lede">I design embedded systems, digital silicon-on-FPGA, and RF-aware boards — then prove them on the bench.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="projects.html">View the work</a>
+                <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+            </div>
+            <div class="hero-meta">
+                <span class="signal">Systems live</span>
+                <span>Embedded · FPGA · RF · Control</span>
+                <span>Vancouver</span>
+            </div>
         </div>
     </section>
 
-    <!-- Introduction Section -->
-    <div class="section-header">
+    <section class="band band-elevated">
         <div class="container">
-            <h3>Introduction</h3>
+            <div class="section-head reveal">
+                <p class="eyebrow">Focus</p>
+                <h2>Built around the stack that actually ships.</h2>
+                <p>From schematic to firmware, I treat hardware as a product: tight constraints, measured results, no mystery boxes.</p>
+            </div>
+            <div class="domains">
+                <article class="domain reveal">
+                    <p class="eyebrow">01</p>
+                    <h3>Embedded</h3>
+                    <p>MCU firmware, sensor fusion, PWM, and real-time control with clean power and fault-aware I/O.</p>
+                </article>
+                <article class="domain reveal">
+                    <p class="eyebrow">02</p>
+                    <h3>Digital design</h3>
+                    <p>RTL in Verilog, FSM control, verification, and FPGA bring-up on silicon you can clock.</p>
+                </article>
+                <article class="domain reveal">
+                    <p class="eyebrow">03</p>
+                    <h3>RF &amp; PCB</h3>
+                    <p>Planar antennas, resonant matching, and layout discipline at 13.56 MHz and beyond.</p>
+                </article>
+                <article class="domain reveal">
+                    <p class="eyebrow">04</p>
+                    <h3>Mechatronics</h3>
+                    <p>Closed-loop motion, thermal profiles, and machines that have to work in the real world.</p>
+                </article>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <section class="content-section">
+    <section class="band">
         <div class="container">
-            <div class="intro-content">
-                <div class="intro-images">
-                    <img src="IMG_2657.jpg" alt="Trot Davis" class="intro-img">
-                    <img src="IMG_8691.jpg" alt="Trot Davis" class="intro-img">
-                </div>
-                <div class="intro-text">
-                    <p>I'm an electrical engineering student passionate about designing hardware systems and building polished, reliable prototypes. I study at the University of British Columbia and focus on embedded systems, digital design, and practical electronics.</p>
-                    <p>Explore my <a href="projects.html">projects</a>, view my <a href="resume.html">resume</a>, or fill out a quick form for my group project <a href="https://forms.gle/MGqTRsK4gHa4JUKo8" target="_blank">here</a>.</p>
+            <div class="section-head reveal">
+                <p class="eyebrow">Selected work</p>
+                <h2>Hardware that holds up under measurement.</h2>
+            </div>
+            <div class="bento">
+                <a class="tile reveal" href="projects.html#pcb">
+                    <div class="tile-copy">
+                        <p class="eyebrow">NFC · 13.56 MHz</p>
+                        <h3>PCB business card</h3>
+                        <p>Custom planar antenna, Altium layout, and contactless data on a card you can actually carry.</p>
+                    </div>
+                    <div class="tile-media">
+                        <img src="PCB%20Schematic.png" alt="NFC business card PCB schematic">
+                    </div>
+                </a>
+                <div class="tile-stack">
+                    <a class="tile reveal" href="projects.html#risc">
+                        <div class="tile-copy">
+                            <p class="eyebrow">Verilog · FPGA</p>
+                            <h3>32-bit RISC machine</h3>
+                            <p>Datapath, FSM, and live execution on a DE1-SoC.</p>
+                        </div>
+                        <div class="tile-media">
+                            <img src="RISC%20Machine.png" alt="RISC machine architecture">
+                        </div>
+                    </a>
+                    <a class="tile reveal" href="projects.html#reflow">
+                        <div class="tile-copy">
+                            <p class="eyebrow">Thermal control</p>
+                            <h3>Reflow solder oven</h3>
+                            <p>Dual-MCU profiling with closed-loop heat.</p>
+                        </div>
+                        <div class="tile-media">
+                            <img src="Reflow%20Solder%20Oven.png" alt="Reflow solder oven" class="photo">
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="band band-elevated">
+        <div class="container about">
+            <div class="about-photos reveal">
+                <img src="IMG_2657.jpg" alt="Trot Davis">
+                <img src="IMG_8691.jpg" alt="Trot Davis in the lab">
+            </div>
+            <div class="reveal">
+                <p class="eyebrow">About</p>
+                <h2>Electrical engineering student. Prototype-first.</h2>
+                <p>I'm Trot Davis, studying electrical engineering at the University of British Columbia. I care about hardware that is elegant on the schematic and reliable on the bench — boards, cores, and control loops you can trust.</p>
+                <p>Browse the <a href="projects.html">project archive</a>, download my <a href="resume.html">resume</a>, or send a note through the <a href="contact.html">contact page</a>.</p>
+                <dl class="specs">
+                    <div class="spec">
+                        <dt>School</dt>
+                        <dd>University of British Columbia</dd>
+                    </div>
+                    <div class="spec">
+                        <dt>Discipline</dt>
+                        <dd>Electrical Engineering</dd>
+                    </div>
+                    <div class="spec">
+                        <dt>Studio</dt>
+                        <dd>Embedded, digital, RF, robotics</dd>
+                    </div>
+                    <div class="spec">
+                        <dt>Status</dt>
+                        <dd>Open to internships &amp; collaboration</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <section class="band cta-band">
+        <div class="container reveal">
+            <p class="eyebrow">Next node</p>
+            <h2>Let’s build something that actually works.</h2>
+            <p class="muted" style="margin: 14px auto 28px; max-width: 520px;">If you need someone who can move from theory to a measured prototype, I’m easy to reach.</p>
+            <a class="btn btn-primary" href="contact.html">Start a conversation</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <span>© 2026 Trot Davis</span>
+            <span>Electrical Engineering · Hardware · Systems</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

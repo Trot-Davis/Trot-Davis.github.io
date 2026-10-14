@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Trot Davis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="nav-left">
+                    <div class="logo">TD</div>
+                    <span class="nav-title">Engineering Portfolio: Trot Davis</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <div class="section-header">
+        <div class="container">
+            <h3>Projects</h3>
+        </div>
+    </div>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- PCB NFC Business Card -->
+                <div class="project-card">
+                    <h3>PCB Business Card</h3>
+                    <div class="project-images">
+                        <img src="PCB Schematic.png" alt="PCB NFC Business Card schematic">
+                        <img src="PCB Layout.png" alt="PCB NFC Business Card layout">
+                        <img src="PCB Calculations.png" alt="PCB NFC Business Card calculations">
+                    </div>
+                    <p>Designed and developed an NFC-enabled business card PCB utilizing 13.56 MHz inductive coupling technology. Implemented custom planar antenna design with optimized trace geometry to achieve target inductance values for resonant operation. Conducted electromagnetic simulation and parametric analysis using spreadsheet modeling to validate antenna performance characteristics. Designed complete schematic and PCB layout in Altium Designer, including component library creation and footprint optimization. Integrated NFC controller IC with power management circuitry and implemented firmware for contactless data transmission. Project demonstrates proficiency in RF circuit design, PCB layout optimization, and embedded systems integration.</p>
+                    <a href="#top" class="project-link">Back to top</a>
+                </div>
+
+                <!-- RISC Machine -->
+                <div class="project-card">
+                    <h3>RISC Machine</h3>
+                    <div class="project-images">
+                        <img src="RISC Machine.png" alt="RISC Machine overview">
+                        <img src="Datapath RISC Machine.png" alt="RISC Machine datapath">
+                        <img src="State Machine RISC.png" alt="RISC Machine state machine">
+                    </div>
+                    <p>Implemented a 32-bit RISC processor architecture in Verilog HDL featuring instruction decode, finite state machine control unit, arithmetic logic unit (ALU), and dual-port memory interface. Developed comprehensive testbench suite using ModelSim for functional verification and timing analysis. Synthesized design targeting Altera DE1-SoC FPGA platform using Quartus Prime development environment. Achieved successful on-board demonstration with real-time instruction execution and memory operations. Project encompassed RTL design methodology, digital signal processing fundamentals, and FPGA implementation workflows. Demonstrated proficiency in hardware description languages, digital design verification, and embedded systems development.</p>
+                    <a href="#top" class="project-link">Back to top</a>
+                </div>
+
+                <!-- Arcade Claw -->
+                <div class="project-card">
+                    <h3>Arcade Claw</h3>
+                    <div class="project-images">
+                        <img src="APSCCLAW2.png" alt="Arcade claw">
+                    </div>
+                    <p>Developed embedded control system for automated arcade claw mechanism utilizing Arduino microcontroller platform. Implemented ultrasonic distance sensing with calibrated threshold detection algorithms for precise object positioning. Designed servo motor control interface with PWM signal generation and timing optimization for consistent actuation cycles. Integrated power management system with fault protection and current limiting for reliable operation. Collaborated with multidisciplinary engineering team on mechanical-electrical integration and system validation. Project demonstrated proficiency in embedded C programming, sensor integration, motor control systems, and hardware-software co-design methodologies.</p>
+                    <a href="#top" class="project-link">Back to top</a>
+                </div>
+
+                <!-- Reflow Solder Oven -->
+                <div class="project-card">
+                    <h3>Reflow Solder Oven</h3>
+                    <div class="project-images">
+                        <img src="Reflow Solder Oven.png" alt="Reflow solder oven hardware">
+                        <img src="Reflow Python 3.png" alt="Python plotting of oven profile">
+                    </div>
+                    <p>Co-developed dual-microcontroller reflow soldering oven control system with precision temperature profiling capabilities. Architected master-slave communication protocol between Nuvoton MCUs for coordinated thermal management. Implemented assembly language firmware for finite state machine control, LCD interface management, and inter-processor signaling protocols. Designed timer-based pulse width modulation (PWM) control system for heating element regulation with closed-loop feedback from thermocouple sensors. Developed Python-based data acquisition and visualization system for real-time temperature monitoring and profile validation. Integrated buzzer control, LED status indicators, and serial communication interfaces. Project encompassed embedded systems design, thermal control algorithms, real-time data processing, and multi-processor system integration methodologies.</p>
+                    <a href="#top" class="project-link">Back to top</a>
+                </div>
+
+                <!-- Coin-Picking Robot -->
+                <div class="project-card">
+                    <h3>Coin‑Picking Robot</h3>
+                    <div class="project-images">
+                        <img src="291car.jpeg" alt="Coin-picking robot photo 1">
+                        <img src="291car2.jpeg" alt="Coin-picking robot photo 2">
+                    </div>
+                    <p>Designed and implemented autonomous coin collection robot with computer vision-based object detection and precision manipulation capabilities. Developed sensor fusion algorithms combining ultrasonic and optical sensors for robust object localization under varying lighting conditions. Implemented PID control algorithms for precise motor control and path planning optimization. Designed power management system with battery monitoring and low-power operation modes. Integrated mechanical actuation system with servo-controlled gripper mechanism for reliable object manipulation. Project demonstrated proficiency in robotics systems integration, sensor fusion, control theory implementation, and mechanical-electrical system design.</p>
+                    <a href="#top" class="project-link">Back to top</a>
+                </div>
+            </div>
+
+            <!-- Upcoming Projects -->
+            <div class="upcoming-projects">
+                <h3>Upcoming Projects</h3>
+                <p>Exciting new projects are on the way! Stay tuned for more updates...</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
